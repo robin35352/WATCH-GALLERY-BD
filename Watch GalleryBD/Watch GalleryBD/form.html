@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login & Signup </title>
+    
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="icon" href="images/favicon.png" type="image/png" />
+	
+  </head>
+  
+  
+  <body>
+  
+  <!--Menu   Part-->
+		
+		
+		
+		<div class="main_wrap ">
+		  <div class="wrap">
+				<nav  id="sticker">
+			<div id="nav">            
+								
+
+								
+			
+			
+			
+			
+			        <ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Catagory &raquo;</a>
+									<ul>
+										<li><a href="#"> Smart Watch</a></li>
+										<li><a href="#">Analog</a></li>
+										<li><a href="#">Digital</a></li>
+										
+										
+									</ul>
+					</li>
+					<li><a href="#">Offers</a>
+							        	
+									</li>
+					<li><a href="#">Brand &raquo;</a>
+						<ul>
+							<li><a href="#">Piaget</a></li>
+							<li><a href="#">Cartier</a></li>
+							<li><a href="#">Casio</a></li>
+							<li><a href="#">Tudor</a></li>
+							<li><a href="#">Omega</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#">Signup or Login</a></li>
+				</ul>
+				
+				
+				
+				<!--search box-->
+			<form class="form_wrapper">
+    <input type="text" id="search" placeholder="Search for..." required>
+    <input type="submit" value="go" id="submit">
+</form>
+			
+			
+			
+			
+			
+			
+			
+			</div>
+		</nav>
+			
+		  </div>
+		
+	</div>
+		<!--end of menu part-->
+  
+  
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Login Form</div>
+        <div class="title signup">Signup Form</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form action="#" class="login">
+            <div class="field">
+              <input type="text" placeholder="Email Address" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+            <div class="pass-link"><a href="#">Forgot password?</a></div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+          </form>
+          <form action="#" class="signup">
+            <div class="field">
+              <input type="text" placeholder="Email Address" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Confirm password" required>
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Signup">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+	
+	
+	
+	<!-- footer section-->
+		
+						                               <!--footer section partner-->
+						
+			<div class="fix_container">
+			<div class="container">
+				<footer class="fotmain">
+					<div class="fotleft">
+						<div class="fotlefthead">
+							<h2>Our parthners:</h2>
+						</div>
+						<div class="fotborder"></div>
+						
+						<div class="fotleftheadbottom">
+							
+							<p class="fotleftp3"><a href="https://www.daraz.com.bd/">Daraz</a></p>
+							<p class="fotleftp3"><a href="https://www.pickaboo.com/">Pickaboo</a></p>
+							<p class="fotleftp3"><a href="https://www.paperfly.com.bd/">Paperfly</a></p>
+						
+						</div>
+					
+					</div>
+					
+					
+					                                         <!--footer section quick link-->
+					
+					
+					
+											 <!--footer section social link-->
+					
+					
+					
+					<div class="fotright">
+						<div class="fotrighthead">
+							<h2>Follow Us:</h2>
+						</div>
+						<div class="fotborderright"></div>
+						<a href="http://facebook.com"><img class="social01" src="images/fb.jpg" alt="facebook_logo"></a>
+						<a href="http://youtube.com"><img class="social02" src="images/utube.jpg" alt="youtube_logo"></a>
+						<a href="http://instagram.com"><img class="social03" src="images/ins.jpg" alt="instagram_logo"></a>
+						<a href="http://twitter.com"><img class="social04" src="images/twitter.png" alt="google_plus_logo"></a>
+					
+					</div>
+					
+					
+					                                    
+														
+					
+				</footer>
+			
+			
+			
+			</div>
+		</div>
+			                            
+										
+										               <!--copyright section-->
+			
+		
+		<div class="fix_container">
+			<div class="container">
+				<div class="copyright">
+					<p class="copytext01">© 2021 All right Reserved</p>
+					<p class="copytext02"> Watch GalleryBD &#8482;</p>
+					
+				</div>
+			
+			
+			
+			</div>
+		</div>
+
+
+    <script>
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+      });
+    </script>
+
+  </body>
+</html>
